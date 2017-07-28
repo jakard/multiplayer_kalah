@@ -1,0 +1,44 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'maven'
+apply plugin: 'spring-boot'
+
+
+buildscript {
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:" + springBootVersion)
+    }
+
+    repositories {
+	mavenCentral()
+    }
+}
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Gaming Service for Backbase', 'Implementation-Version': version
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+
+    compile 'com.hazelcast:hazelcast-client:3.8.3',
+            'org.springframework.security.oauth:spring-security-oauth2:2.1.1.RELEASE',
+            'org.springframework.boot:spring-boot-starter:' + springBootVersion,
+            'org.springframework.boot:spring-boot-starter-web:' + springBootVersion,
+            'org.springframework.boot:spring-boot-starter-thymeleaf:' + springBootVersion,
+            'org.springframework.data:spring-data-commons:' + springDataCommonsVersion,
+            'org.springframework.boot:spring-boot-starter-test:' + springBootVersion,
+            'org.springframework.cloud:spring-cloud-starter:' + springCloudStarterVersion,
+            'org.springframework.cloud:spring-cloud-starter-eureka-server:' + springCloudStarterEurekaServerVersion
+
+    testCompile 'junit:junit:4.+'
+}
+
+
