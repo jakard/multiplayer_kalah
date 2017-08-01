@@ -3,10 +3,6 @@
 This is my code challenge for backbase, i hope you like it
 
 
-![Demo System Schematic](https://github.com/paulc4/microservices-demo/blob/master/mini-system.jpg)
-
-Clone it and either load into your favorite IDE or use maven directly.
-
 ## Versions
 
 To access V1.0.0 of the repo, click on the `release` tab in https://github.com/jakard/multiplayer_kalah.
@@ -26,8 +22,8 @@ To do this, open three CMD windows (Windows) or three Terminal windows (MacOS, L
 
  1. In each window, change to the directory where you cloned the game
  1. In the first window, build the application using `mvn clean package`
- 1. In the same window run: `java -jar target/kalah-1.1.0.RELEASE.jar eureka` and wait for it to start up
- 1. Switch to the second window and run: `java -jar target/kalah-1.1.0.RELEASE.jar game` and again wait for
+ 1. In the same window run: `java -jar target/game-service-backbase-1.1.0.RELEASE.jar eureka` and wait for it to start up
+ 1. Switch to the second window and run: `java -jar target/game-service-backbase-1.1.0.RELEASE.jar game` and again wait for
  it to start up
 
 
