@@ -19,7 +19,7 @@ This can be a good choice using "client side" microservices load  balancers like
 
 
 
-#What I think is still needed (not coded yet):
+# What I think is still needed (not coded yet):
 
 1- Login and security, oAuth2 will do the work
 2- More maintainable store, SpringData abstraction will solve this.
