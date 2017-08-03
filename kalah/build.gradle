@@ -25,7 +25,9 @@ repositories {
     mavenCentral()
 }
 
-
+springBoot {
+    mainClass = "org.rsosamakestech.microservices.gaming.server.Main"    
+}
 
 dependencies {
 
