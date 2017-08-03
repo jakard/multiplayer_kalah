@@ -21,9 +21,9 @@ You may find it easier to view the different applications by running them from a
 To do this, open three CMD windows (Windows) or three Terminal windows (MacOS, Linux) and arrange so you can view them conveniently.
 
  1. In each window, change to the directory where you cloned the game
- 1. In the first window, build the application using `mvn clean package`
- 1. In the same window run: `java -jar target/game-service-backbase-1.1.0.RELEASE.jar eureka` and wait for it to start up
- 1. Switch to the second window and run: `java -jar target/game-service-backbase-1.1.0.RELEASE.jar game` and again wait for
+ 1. In the first window, build the application using `gradle build`
+ 1. In the same window run: `java -jar build/game-service-backbase-1.1.0.RELEASE.jar eureka` and wait for it to start up
+ 1. Switch to the second window and run: `java -jar build/game-service-backbase-1.1.0.RELEASE.jar game` and again wait for
  it to start up
 
 

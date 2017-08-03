@@ -32,7 +32,7 @@ public class GamingServer {
 	 */
 	public static void main(String[] args) {
 		// Tell server to look for accounts-server.properties or
-		// accounts-server.yml
+		// gaming-server.yml
 		System.setProperty("spring.config.name", "gaming-server");
 
 		SpringApplication.run(GamingServer.class, args);
