@@ -46,7 +46,7 @@ public class Main {
 	 * Usage.
 	 */
 	protected static void usage() {
-		logger.warning("Usage: java -jar ... <server-name> [server-port]\n where server-name is 'reg', 'registration', " + "'accounts' or 'web' and server-port > 1024");
+		logger.warning("Usage: java -jar ... <server-name> [server-port]\n where server-name is 'eureka', or 'game' and server-port > 1024");
 		
 		
 	}
